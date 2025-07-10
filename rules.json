@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://service.streamkey.ru/playlist/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://usher\\.ttvnw\\.net/api/channel/hls/([^/?]+\\.m3u8)",
+      "resourceTypes": ["xmlhttprequest", "media"]
+    }
+  }
+]
